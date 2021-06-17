@@ -9,7 +9,12 @@ void getShapePos(float t, float r, float& x, float& y) {
 void getShapePos(float t, float r, float& x, float& y) {
     x = sin(t) * r;
     y = cos(t) * r;
+    //↑次の動画（リサージュ曲線）の説明では
+    //x = cos(t) * r;
+    //y = sin(t) * r;
+    //になっちゃってます。すいません。
 }
+
 #endif
 void gmain() {
     window(1920, 1080, full);
